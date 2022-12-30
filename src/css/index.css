@@ -5,4 +5,5 @@ body {
     'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
     sans-serif;
   background-color: #1c1c1d;
+  background: repeating-radial-gradient(circle at top left, #202020, #370c42, #371780, #471c52, #202020);
 }

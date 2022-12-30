@@ -1,0 +1,119 @@
+.bigsection {
+    width: 100vw;
+    color: #ffffff;
+    font-family: 'Open Sans', 'Lucida Sans', 'Lucida Sans Regular', Geneva, Verdana, sans-serif;
+    min-height: fit-content;
+    height: 75vh;
+    margin: 0;
+    padding: 2vw;
+    box-sizing: border-box;
+}
+
+.bigsection:nth-of-type(2n+1) {
+    background-color: #fff;
+    color: rgb(46, 12, 79);
+}
+
+.bigsection-header {
+    font-weight: bold;
+}
+
+.bigsection-header h1 {
+    font-size: 3em;
+}
+
+.bigsection-header h2 {
+    font-size: 2em;
+}
+
+.bigsection-right {
+    float: right;
+    height: 94%;
+    margin: 1%;
+}
+
+.bigsection-left {
+    float: left;
+    height: 94%;
+    margin: 1%;
+}
+
+.bigsection-image img {
+    animation: knight-wobble 5s ease-in-out infinite alternate;
+    width: 80%;
+    margin: 10% 0 0 10%;
+}
+
+.bigsection-image img:hover {
+    animation-play-state: paused;
+}
+
+@keyframes knight-wobble {
+    0% {
+        transform: rotate(0deg) translateY(0);
+    }
+    25% {
+        transform: rotate(3deg) translateY(10%);
+    }
+    75% {
+        transform: translateY(-10%);
+    }
+    100% {
+        transform: rotate(-3deg);
+    }
+}
+
+/* Play button css */
+.play {
+    border-radius: 50%;
+    background-color: #fff;
+    color: #2e0c4f;
+    font-size: 1.8rem;
+    font-weight: bold;
+    height: 3.5rem;
+    width: 3.5rem;
+    padding: 1rem;
+    margin: 0.5rem;
+    cursor: pointer;
+    transition: 0.7s;
+    text-align: center;
+    box-sizing: border-box;
+}
+
+.play i {
+    transform: rotateZ(5deg);
+    display: block;
+    margin: 0 auto;
+    transition: 0.5s;
+}
+
+.play:hover {
+    background-color: #2e0c4f;
+    color: #fff;
+    border: 5px solid #fff2;
+}
+
+.play:hover i:hover {
+    transform: rotateZ(-5deg) scale(0.8) translateY(-0.5rem);
+}
+
+.bg-cover {
+    height: 100vh;
+    width: 100vw;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: #00000080;
+    backdrop-filter: blur(5px);
+    z-index: 3;
+}
+
+.play-video {
+    position: fixed;
+    top: 25%;
+    left: 15%;
+    width: 70%;
+    height: 70%;
+    z-index: 4;
+    border-radius: 2%;
+}
