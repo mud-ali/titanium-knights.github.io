@@ -17,7 +17,12 @@ function Bigsection(props) {
                 {props.subtitle !== "" ? <h2>{props.subtitle}</h2> : null}
             </div>
             <div className="bigsection-content">
-                <p>{props.content}</p>
+                {(props.content ?? "") !== "" ? <p>{props.content}</p> : null}
+                {props.bullets !== undefined ? <ul>
+                    {props.bullets.map((bullet, index) => {
+                        return <li>{bullet}</li>
+                    })}
+                </ul> : null}
                 {props.plus !== undefined ? <Play
                     videoTitle={props.title}
                     videoShow={videoShow}

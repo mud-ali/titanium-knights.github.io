@@ -3,14 +3,16 @@
     color: #ffffff;
     font-family: 'Open Sans', 'Lucida Sans', 'Lucida Sans Regular', Geneva, Verdana, sans-serif;
     min-height: fit-content;
-    height: 95vh;
+    height: 100vh;
     margin: 0;
-    padding: 2vw;
+    padding: 7vw 2vw 2vw 2vw;
     box-sizing: border-box;
     position: relative;
+    clip-path: polygon(0% 5%, 50% 10%, 100% 15%, 100% 100%, 50% 95%, 0% 90%);
 }
 
 .cardsection:nth-of-type(2n+1) {
+    clip-path: polygon(0% 15%, 50% 10%, 100% 5%, 100% 90%, 50% 95%, 0% 100%);
     background-color: #fff;
     color: rgb(46, 12, 79);
 }
@@ -20,7 +22,7 @@
     height: 70%;
     box-sizing: border-box;
     padding: 5vh;
-    margin: 1%;
+    margin: 2% 1%;
     float: left;
     background-color: #fff;
     color: rgb(46, 12, 79);
