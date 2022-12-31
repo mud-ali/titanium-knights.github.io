@@ -3,7 +3,7 @@
     color: #ffffff;
     font-family: 'Open Sans', 'Lucida Sans', 'Lucida Sans Regular', Geneva, Verdana, sans-serif;
     min-height: fit-content;
-    height: 75vh;
+    height: 85vh;
     margin: 0;
     padding: 2vw;
     box-sizing: border-box;
@@ -38,7 +38,26 @@
     margin: 1%;
 }
 
-.bigsection-image img {
+.bigsection-content {
+    margin: 0%;
+    width: 50%;
+}
+
+.bigsection-left~.bigsection-content {
+    float: right;
+    margin-right: 0.75rem;
+}
+
+.bigsection-right~.bigsection-content {
+    float: left;
+    right: 0;
+}
+
+.bigsection-content li:not(:first-child) {
+    margin-left: 0.75rem;
+}
+
+.bigsection-image img[src="assets/logo/knight-in-space.png"] {
     animation: knight-wobble 5s ease-in-out infinite alternate;
     width: 80%;
     margin: 10% 0 0 10%;
@@ -93,7 +112,7 @@
     border: 5px solid #fff2;
 }
 
-.play:hover i:hover {
+.play:hover i {
     transform: rotateZ(-5deg) scale(0.8) translateY(-0.5rem);
 }
 

@@ -10,7 +10,6 @@ function App() {
       <Navbar />
       <Bigsection
         title="Titanium Knights"
-        side="right"
         subtitle="Team 15887 and 15891"
         content="The Titanium Knights is a robotics club
           from the Bergen County Academies, a public magnet high school
@@ -19,6 +18,10 @@ function App() {
           For the 2022-23 season, we have two teams: Team A (15887) and Team B (15891)."
         image={{src: "assets/logo/knight-in-space.png", alt:""}}
         plus={{video:"https://www.youtube.com/embed/HsitvZ0JaDc"}}
+        settings={{
+          subtitleSize: "1.5rem",
+          side: "right"
+        }}
       />
       <Cardsection 
         cards={[{
@@ -35,7 +38,34 @@ function App() {
             content: "Our rookie season for FTC was the 2018-2019 FTC season, Rover Ruckus, after competing in FRC for numerous years. Composed of two sister teams, the Titanium Knights are a group of high school students interested in building, programming, documenting, and helping out our community."
           }]}
       />
-      
+      <Bigsection
+        title="How Our Teams Work"
+        subtitle="Each team is split up into 3 different sections, programming, non-tech, and build. Each section has their own responsibilities."
+        content=""
+        image={{src: "assets/logo/main_logo.png", alt:""}}
+        bullets={[{
+            header: "Build",
+            content: [
+              "This subteam is responsible for actually building the robot. The build team creates CAD models of the robot and assembles the robot. Throughout the season, they work on fixing flaws that may exist with the build."
+            ]
+          },
+          {
+            header: "Programming",
+            content: [
+              "This team is responsible for programming the robot. Once the robot is built, it must be able to react from user input. The programmers use Java and Kotlin to make the robot interactive and controllable via a game controller."
+            ]
+          },
+          {
+            header: "Non-Tech",
+            content: [
+              "Building robots is expensive, so the non-tech subteam is responsible for outreach with companies. They work to gain funding to build the robots and attend competitions. They are also responsible for everything else that is not related to build or programming."
+            ]
+          }]}
+          settings={{
+            subtitleSize: "1.5rem",
+            side: "left"
+          }}
+      />
     </div>
   );
 }
