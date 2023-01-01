@@ -3,6 +3,7 @@ import './css/index.css';
 import Navbar from './Navbar';
 import Bigsection from './Bigsection';
 import Cardsection from './Cardsection';
+import Footer from './Footer';
 
 function App() {
   return (
@@ -66,6 +67,7 @@ function App() {
             side: "left"
           }}
       />
+      <Footer />
     </div>
   );
 }
