@@ -11,7 +11,6 @@ function Navbar() {
         </div>
         <div className="nav-item nav-links">
             <div className="nav-link"><a href="/">Home</a></div>
-            {/* <div className="nav-link"><a href="about.html">About</a></div> */}
             <div className="dropdown-dropper nav-link">
                 <span>Teams</span>
                 <ol className="dropdown">

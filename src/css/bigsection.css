@@ -125,6 +125,7 @@
     background-color: #00000080;
     backdrop-filter: blur(5px);
     z-index: 3;
+    cursor: copy
 }
 
 .play-video {
