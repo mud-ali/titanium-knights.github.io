@@ -11,8 +11,8 @@ function Footer(props) {
             <div className="footer-column">
                 <h4>Links</h4>
                 <a href="https://www.firstinspires.org/robotics/ftc" target="_blank" rel="noreferrer">FIRST Tech Challenge</a>
-                <a href="/sponsors.html">Our Sponsors</a>
-                <a href="/contact.html">Contact Us</a>
+                <a href="/sponsors">Our Sponsors</a>
+                <a href="/contact">Contact Us</a>
             </div>
             <div className="footer-column">
                 <h4>Find us at:</h4>

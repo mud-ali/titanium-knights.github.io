@@ -5,7 +5,7 @@ import Bigsection from '../components/Bigsection';
 import Cardsection from '../components/Cardsection';
 import Footer from '../components/Footer';
 
-function App() {
+function Home() {
   return (
     <div className="App">
       <Navbar />
@@ -72,4 +72,4 @@ function App() {
   );
 }
 
-export default App;
+export default Home;
