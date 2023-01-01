@@ -1,5 +1,5 @@
 import React from "react";
-import './css/bigsection.css';
+import '../css/bigsection.css';
 
 function Play(props) {
     return (

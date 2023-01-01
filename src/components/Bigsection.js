@@ -1,5 +1,5 @@
 import { React, useState } from 'react';
-import './css/bigsection.css';
+import '../css/bigsection.css';
 import Play from './Play';
 
 function Bigsection(props) {

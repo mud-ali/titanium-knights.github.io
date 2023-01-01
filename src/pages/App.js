@@ -1,9 +1,9 @@
 import React from 'react';
-import './css/index.css';
-import Navbar from './Navbar';
-import Bigsection from './Bigsection';
-import Cardsection from './Cardsection';
-import Footer from './Footer';
+import '../css/index.css';
+import Navbar from '../components/Navbar';
+import Bigsection from '../components/Bigsection';
+import Cardsection from '../components/Cardsection';
+import Footer from '../components/Footer';
 
 function App() {
   return (
