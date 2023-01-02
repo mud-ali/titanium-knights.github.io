@@ -14,24 +14,32 @@
 .cardsection:nth-of-type(2n+1) {
     clip-path: polygon(0% 15%, 50% 10%, 100% 5%, 100% 90%, 50% 95%, 0% 100%);
     background-color: #fff;
-    color: rgb(46, 12, 79);
+    color: #2e0c4f;
 }
 
 .card {
     width: 30%;
-    height: 70%;
+    min-height: 70%;
+    min-width: min-content;
+    aspect-ratio: 4.5/5;
     box-sizing: border-box;
     padding: 5vh;
     margin: 2% 1%;
     float: left;
     background-color: #fff;
-    color: rgb(46, 12, 79);
+    color: #2e0c4f;
     border-radius: 1%;
-    box-shadow: -2px 2px 5px 0 rgba(0, 0, 0, 0.5);
+    box-shadow: -2px 2px 5px 0 #00000080;
     position: relative;
 }
+
 .card:nth-of-type(2n) {
-    background-color: rgb(76, 29, 123);
-    box-shadow: -3px 3px 5px 0 rgba(0, 0, 0, 0.5);
+    background-color: #4c1d7b;
+    box-shadow: -3px 3px 5px 0 #00000080;
     color: #fff;
+}
+
+.white:nth-of-type(n) {
+    background-color: #fff;
+    color: #2e0c4f;
 }

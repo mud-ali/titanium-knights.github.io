@@ -43,7 +43,7 @@ function Home() {
         title="How Our Teams Work"
         subtitle="Each team is split up into 3 different sections, programming, non-tech, and build. Each section has their own responsibilities."
         content=""
-        image={{src: "assets/logo/main_logo.png", alt:""}}
+        image={{src: "assets/logo/main_logo.png", alt:"", size: "70%"}}
         bullets={[{
             header: "Build",
             content: [
@@ -63,7 +63,7 @@ function Home() {
             ]
           }]}
           settings={{
-            subtitleSize: "1.5rem",
+            subtitleSize: "1rem",
             side: "left"
           }}
       />
