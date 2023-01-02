@@ -1,6 +1,7 @@
 import { React, useState } from 'react';
 import '../css/bigsection.css';
 import Play from './Play';
+import Card from './Card';
 
 function Bigsection(props) {
     const [videoShow, setVideo] = useState(false);
@@ -9,7 +10,7 @@ function Bigsection(props) {
         <div className="bigsection">
             <div className={"bigsection-"+props.settings.side}>
                 <div className="bigsection-image">
-                    <img src={props.image.src} alt={props.image.alt} />
+                    {props.image !== undefined ? <img width={props.image.size??""} src={props.image.src} alt={props.image.alt} /> : null}
                 </div>
             </div>
 
@@ -37,6 +38,16 @@ function Bigsection(props) {
                         )
                     })}
                 </ul> : null}
+                {props.cards !== undefined && props.cards.map((card, index) => (
+                    <Card
+                        key={index}
+                        title={card.title}
+                        image={card.image ? {src: card.image.src, alt: card.image.alt} : null}
+                        content={card.content}
+                        link={card.link}
+                        settings={card.settings}
+                    />
+                ))}
 
                 {props.plus?.video !== undefined ? <Play
                     videoTitle={props.title}
