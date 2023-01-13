@@ -50,3 +50,26 @@
     font-style: italic;
     text-decoration: underline;
 }
+
+/* responsiveness */
+
+@media only screen and (max-width: 768px) {
+    .footer {
+        flex-direction: column;
+        height: fit-content;
+        padding: 5vh 5vw;
+    }
+    /* actually a footer row now :p */
+    .footer-column {
+        height: 20%;
+        width: 100%;
+        padding: 0;
+    }
+    .footer-socials {
+        width: 100%;
+        font-size: 1.5rem;
+    }
+    .footer-img {
+        display: none;
+    }
+}

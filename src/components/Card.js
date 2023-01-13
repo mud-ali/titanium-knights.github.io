@@ -2,12 +2,24 @@ import React from "react";
 import "../css/card.css";
 
 function Card(props) {
+    let image = props.image !== undefined && props.image !== null
+    ? {
+        src: props.image[0],
+        alt: props.image[1]
+    } : null;
+
+    let link = props.link !== undefined && props.link !== null
+    ? {
+        url: props.link[0],
+        text: props.link[1]
+    } : null;
+
     return (
-        <div className={"card "+props.settings?.forceColor??""}>
+        <div className={"card"+((props.settings?.forceColor)??"")}>
             <h3>{props.title}</h3>
-            {props.image !== null ? <img src={props.image.src} alt={props.image.alt} /> : null}
+            {image !== null ? <img src={image.src} alt={image.alt} /> : null}
             <p>{props.content}</p>
-            {props.link !== undefined ? <a href={props.link.url} target="_blank" rel="noreferrer">{props.link.text}</a> : null}
+            {link !== null ? <a href={link.url} target="_blank" rel="noreferrer">{link.text}</a> : null}
         </div>
     );
 }

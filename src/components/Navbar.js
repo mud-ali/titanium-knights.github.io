@@ -22,9 +22,9 @@ function Navbar() {
             <div className="nav-link"><a href="/sponsors">Sponsors</a></div>
         </div>
         <div className='nav-item nav-socials'>
-            <a target="_blank" href="https://www.facebook.com/frcteam6203/" rel="noreferrer">
+            {/* <a target="_blank" href="https://www.facebook.com/frcteam6203/" rel="noreferrer">
                 <i className="fa-brands fa-facebook"></i>
-            </a>
+            </a> */}
             <a target="_blank" href="https://twitter.com/KnightsTitanium" rel="noreferrer">
                 <i className="fa-brands fa-twitter"></i>
             </a>

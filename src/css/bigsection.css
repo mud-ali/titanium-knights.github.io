@@ -3,10 +3,15 @@
     color: #ffffff;
     font-family: 'Open Sans', 'Lucida Sans', 'Lucida Sans Regular', Geneva, Verdana, sans-serif;
     min-height: fit-content;
-    height: 85vh;
     margin: 0;
     padding: 2vw;
     box-sizing: border-box;
+    display: flex;
+    flex-direction: row-reverse;
+}
+
+.bigsection:nth-of-type(4n-4) {
+    flex-direction: row;
 }
 
 .bigsection:nth-of-type(2n+1) {
@@ -26,44 +31,33 @@
     font-size: 2em;
 }
 
-.bigsection-right {
-    float: right;
-    height: 94%;
-    margin: 1%;
-}
-
-.bigsection-left {
-    float: left;
-    height: 94%;
-    margin: 1%;
+.bigsection-container {
+    height: 100%;
+    width: 100%;
+    margin: 1rem;
 }
 
 .bigsection-content {
-    margin: 0%;
+    margin: 2rem;
     width: 50%;
-}
-
-.bigsection-left~.bigsection-content {
-    float: right;
-    margin-right: 0.75rem;
-}
-
-.bigsection-right~.bigsection-content {
-    float: left;
-    right: 0;
 }
 
 .bigsection-content li:not(:first-child) {
     margin-left: 0.75rem;
 }
 
-.bigsection-image img[src="assets/logo/knight-in-space.png"] {
+.bigsection-image {
+    margin: 0 auto;
+    /* height: 50%; */
+}
+
+.bigsection-image[src="assets/logo/knight-in-space.png"] {
     animation: knight-wobble 5s ease-in-out infinite alternate;
     width: 80%;
     margin: 10% 0 0 10%;
 }
 
-.bigsection-image img:hover {
+.bigsection-image:hover {
     animation-play-state: paused;
 }
 
@@ -79,6 +73,54 @@
     }
     100% {
         transform: rotate(-3deg);
+    }
+}
+
+/* responsiveness for bigsection */
+
+@media only screen and (max-width: 768px) {
+    .bigsection {
+        min-height: fit-content;
+        border: 2px solid burlywood;
+        /* height: 100%; */
+        /* width: 100%; */
+        /* padding: 2rem; */
+    }
+    .bigsection-right, .bigsection-left {
+        height: fit-content;
+        width: fit-content;
+        margin: 0;
+        padding: 0;
+    }
+    .bigsection-header {
+        text-align: center;
+        width: 100%;
+        padding: 0;
+        margin: 0;
+        float: left;
+    }
+    .bigsection-header h1 {
+        font-size: 2em;
+    }
+    .bigsection-header h2 {
+        font-size: 1.5em;
+        border: 2px solid green;
+        margin: 5% auto;
+        display: inline-block;
+    }
+    .bigsection-left~.bigsection-content, .bigsection-right~.bigsection-content {
+        width: 90%;
+        margin: 0;
+        float: left;
+    }
+    .bigsection-image {
+        display: block;
+        margin: 0 auto;
+    }
+    .bigsection li {
+        border: 2px solid red;
+        width: 60vw;
+        height: min-content;
     }
 }
 
