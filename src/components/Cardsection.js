@@ -4,7 +4,8 @@ import Card from "./Card";
 
 function Cardsection(props) {
     return (
-        <div className="cardsection">
+        <div className="cardsection" data-overrideslant={props.noSlant === true ? "true": "false"}
+            data-color={props.color === "dark" ? "dark" : props.color === "light" ? "light" : "false"}>
             {props.cards.map((card, index) => (
                 <Card
                     key={index}

@@ -17,6 +17,20 @@
     color: #2e0c4f;
 }
 
+.cardsection[data-overrideSlant="true"] {
+    clip-path: none;
+}
+
+.cardsection[data-color="light"] {
+    background-color: #fff;
+    color: #2e0c4f;
+}
+
+.cardsection[data-color="dark"] {
+    color: #fff;
+    background-color: #2e0c4f;
+}
+
 .card {
     width: 30%;
     min-height: 70%;
@@ -42,4 +56,9 @@
 .white:nth-of-type(n) {
     background-color: #fff;
     color: #2e0c4f;
+}
+.card img {
+    width: 60%;
+    object-fit: scale-down;
+    border-radius: 10%;
 }

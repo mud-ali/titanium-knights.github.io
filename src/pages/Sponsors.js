@@ -9,20 +9,40 @@ function TeamA() {
         <div className="App">
             <Navbar />
             <Cardsection 
+                color="light"
+                noSlant={true}
                 cards={[{
                     title: "Gaba Printing",
                     image: ["assets/sponsors/gaba-logo.png",""],
                     content: "Gaba Printing can print any sort of merchandise you need. They printed these incredibly poggers t-shirts for us, so thanks!"
                 }, {
                     title: "Google",
-                    image: ["assets/sponsors/google-logo.png",""],
-                    content: "This year, we were lucky to receive funds from the world's largest search engine, Google. Thanks for the support!"
+                    image: ["assets/sponsors/google-logo.png","Google"],
+                    content: "This year, we were lucky to receive funds from the world's largest search engine, Google. They were also super useful in searching up things because yeah that's what they do best"
                 }, {
-                    title: "Our Teams",
-                    image: null,
-                    content: "Our rookie season for FTC was the 2018-2019 FTC season, Rover Ruckus, after competing in FRC for numerous years. Composed of two sister teams, the Titanium Knights are a group of high school students interested in building, programming, documenting, and helping out our community."
+                    title: "SendCutSend",
+                    image: ["assets/sponsors/sendcutsend-logo.png",""],
+                    content: "SendCutSend is our go to supplier for custom parts that we use in our robots. They offer a wide variety of products and fast delivery times, which are sure to speed up your build process."
                 }]}
             />
+            <Cardsection
+                noSlant={true}
+                color="dark"
+                cards={[{
+                    title: "Gobilda",
+                    image: ["assets/sponsors/gobilda-logo.png",""],
+                    content: "GoBilda makes like parts or something and we really like them. They are very cool people so thanks go buy stuff from them"
+                }, {
+                    title: "JDM Construction",
+                    image: ["assets/sponsors/jdm-construction-logo.png",""],
+                    content: "JDM Construction is a local construction company that has been a huge help to us. They are great at construction and yeah."
+                }, {
+                    title: "PowerTech",
+                    image: ["assets/sponsors/powertech-logo.png",""],
+                    content: "PowerTech is a local company that makes custom power supplies for robots. Lorem ipsum dolor sit amet"
+                }]}
+            />
+            
             <Footer />
         </div>
     );
