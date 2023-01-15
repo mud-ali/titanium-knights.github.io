@@ -28,7 +28,7 @@
 
 .cardsection[data-color="dark"] {
     color: #fff;
-    background-color: #2e0c4f;
+    background-color: transparent;
 }
 
 .card {
@@ -47,9 +47,17 @@
     position: relative;
 }
 
+.card a {
+    color: #2e0c4f;
+}
+
 .card:nth-of-type(2n) {
     background-color: #4c1d7b;
     box-shadow: -3px 3px 5px 0 #00000080;
+    color: #fff;
+}
+
+.card:nth-of-type(2n) a {
     color: #fff;
 }
 
@@ -57,8 +65,29 @@
     background-color: #fff;
     color: #2e0c4f;
 }
+
+.white a {
+    color: #2e0c4f;
+}
+
 .card img {
     width: 60%;
     object-fit: scale-down;
     border-radius: 10%;
+}
+
+h1 {
+    font-size: 2.5rem;
+    font-weight: 600;
+    padding: 2rem 5rem ;  
+}
+
+h5 {
+    font-size: 1.25rem;
+    font-weight: 400;
+    padding: 0 2rem;
+}
+
+i {
+    padding: 1rem;
 }

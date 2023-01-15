@@ -89,7 +89,7 @@
 .nav-link,
 .nav-link>a,
 .nav-link>span,
-.fa-brands {
+.navbar .fa-brands {
     transition: all 0.2s ease-in;
 }
 
@@ -102,7 +102,7 @@
     color: #0c0929;
 }
 
-.fa-brands:hover {
+.navbar .fa-brands:hover {
     color: #343434;
 }
 

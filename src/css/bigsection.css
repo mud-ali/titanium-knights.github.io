@@ -48,7 +48,6 @@
 
 .bigsection-image {
     margin: 0 auto;
-    /* height: 50%; */
 }
 
 .bigsection-image[src="assets/logo/knight-in-space.png"] {
@@ -82,9 +81,6 @@
     .bigsection {
         min-height: fit-content;
         border: 2px solid burlywood;
-        /* height: 100%; */
-        /* width: 100%; */
-        /* padding: 2rem; */
     }
     .bigsection-right, .bigsection-left {
         height: fit-content;
@@ -144,7 +140,11 @@
 .play i {
     transform: rotateZ(5deg);
     display: block;
-    margin: 0 auto;
+    width: fit-content;
+    height: fit-content;
+    position: relative;
+    margin: 0;
+    padding: 0;
     transition: 0.5s;
 }
 
