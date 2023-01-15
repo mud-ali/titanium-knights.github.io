@@ -10,7 +10,8 @@ function Cardsection(props) {
                 <Card
                     key={index}
                     title={card.title}
-                    image={card.image !== null ? [card.image[0], card.image[1]]: null}
+                    image={card.image != null ? [card.image[0], card.image[1]]: null}
+                    link={card.link != null ? [card.link.url, card.link.text]: null}
                     content={card.content}
                 />
             ))}

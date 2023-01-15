@@ -18,8 +18,8 @@ function Card(props) {
         <div className={"card"+((props.settings?.forceColor)??"")}>
             <h3>{props.title}</h3>
             {image !== null ? <img src={image.src} alt={image.alt} /> : null}
-            <p>{props.content}</p>
-            {link !== null ? <a href={link.url} target="_blank" rel="noreferrer">{link.text}</a> : null}
+            <div>{props.content}</div>
+            {link !== null && link !== undefined ? <a href={link.url} target="_blank" rel="noreferrer">{link.text}</a> : null}
         </div>
     );
 }
